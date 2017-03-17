@@ -264,7 +264,7 @@ body {
 #cMidLeftBar {
 
   width: 400px;
-  height: 2000px;
+  height: 1430px;
   /*border: 1px solid #000;*/
   
 }
@@ -559,8 +559,13 @@ body {
 
   width: 25px;
   height: 25px;
-  border: 1px solid #EEE;
+  border: 1px solid #CCC;
   border-radius: 2px;
+}
+
+.cColorBox:hover {
+
+  cursor: pointer;
 }
 
 #cColorCont {
@@ -610,6 +615,60 @@ body {
   
   background-color: #FFF;
 }
+
+#cMidLeftItemOrdOpt {
+
+  width: 230px;
+  height: 100px;
+  margin: auto;
+  border-bottom: 1px solid #DDD;
+  color: #555; 
+}
+
+#cMidLeftItemOrdOpt a {
+
+
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  color: #555;
+}
+
+#cMidLeftItemOrdOpt a:hover {
+
+  text-decoration: underline;
+}
+
+
+.cChckBx {
+
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+#cMidLeftCntry {
+
+  width: 230px;
+  height: 100px;
+  margin: auto;
+  color: #555;
+}
+
+#cCntrySel {
+
+  width: 200px;
+  margin-top: 5px;
+  height: 40px;
+  padding-left: 20px;
+  border-radius: 5px;
+  outline: none;
+}
+
+
+
+
+
 
 
 
