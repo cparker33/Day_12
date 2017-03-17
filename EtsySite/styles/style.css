@@ -5,6 +5,614 @@ html {box-sizing: border-box;}
 
 body {
 
+  background-color: #FFF;
+}
+
+
+#cApp {
+
+  width: 100%;
+  height: 4000px;
+  border: 1px solid #000;
+}
+
+
+
+
+
+
+
+#cMidRightBody {
+
+  width: 100%;
+  height: 2500px;
+  border: 1px solid #000;
+}
+
+#cMidTopCato {
+
+  width: 100%;
+  height: 300px;
+  border: 1px solid #000;
+}
+
+#cMidItemList {
+
+  width: 100%;
+  height: 300px;
+  border: 1px solid #000;
+}
+
+#cMidItem {
+
+  width: 250px;
+  height: 250px;
+  border: 1px solid #000;
+}
+
+/*font-family: 'Lora', serif;*/
+
+
+#cTitle h1 {
+
+  color: #f96600;
+  padding-left: 20px;
+  margin-top: 10px;
+  font-family: 'Alike Angular', serif;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+#cAppHeader {
+
+  width: 100%;
+  height: 80px;
+  /*border: 1px solid #000;*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;  
+}
+
+#cHeaderLeft {
+
+  width: 530px;
+  height: 80px;
+  /*border: 1px solid #000;*/
+  display: flex;
+  flex-direction: row;
+}
+
+#cHearderSearchCont {
+  
+  display: flex;
+  flex-direction: row;
+}
+
+#cSearchInput {
+
+  width: 350px;
+  height: 35px;
+  border-radius: 5px;  
+  margin-top: 20px;
+  margin-left: 10px;
+  padding-left: 10px;
+  font-size: 16px;
+  outline: none;
+  border: 1px solid #CCC;
+}
+
+#cSearchInput:focus {
+
+  border-radius: 5%;  
+  outline: none;
+  border: 1px solid #000;
+}
+
+#cSearchBtn {
+
+  width: 80px;
+  height: 35px;  
+  margin-top: 20px;
+  margin-left: -10px;
+  border-radius: 3%;
+  background-color: #32A0BA; /* 34a8c4  3099B3*/
+  border: 1px solid #3099B3;
+  color: #FFF;
+  text-align: center;
+  line-height: 35px;
+  font-size: 14px;
+}
+
+#cSearchBtn:hover {
+
+  background-color: #34a8c4; /* 34a8c4  3099B3*/
+  border: 1px solid #3099B3;
+  cursor: pointer;
+}
+
+#cHeaderRight {
+
+  width: 350px;
+  height: 80px;
+  
+  margin-right: 20px;
+  display: flex;
+  flex-direction: row-reverse;  
+}
+
+#cHeaderMenuSell {
+
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+#cHeaderMenuSell a:hover {
+
+ text-decoration: underline;
+ cursor: pointer;
+}
+
+#cHeaderMenuReg {
+
+ margin-top: 30px; 
+ margin-right: 20px;
+}
+
+#cHeaderMenuReg a:hover {
+
+ text-decoration: underline;
+ cursor: pointer;
+}
+
+#cHeaderMenuSignIn {
+
+  width: 65px;
+  height: 40px;
+  border: 1px solid #555;
+  line-height: 40px;
+  border-radius: 5%;
+  margin-top: 20px; 
+  margin-right: 20px;
+  text-align: center;
+  color: #555;
+}
+
+#cHeaderMenuSignIn:hover {
+
+  cursor: pointer;
+  background-color: #f0fbfd; 
+}
+
+/* f0fbfd - hover */
+
+#cHeaderRight a {
+
+  text-decoration: none;
+  color: #555;
+  
+}
+
+#cHeaderMenuCart {
+
+  border-left: 1px solid #AAA;
+  width: 50px;
+  height: 40px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column; 
+}
+
+#cHeaderMenuCart div {
+
+  color: #555;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+#cHeaderMenuCart:hover div {
+
+  color: #000;
+  cursor: pointer;
+}
+
+
+/* BREAK */
+
+#cHeaderCato {
+
+  width: 100%;
+  height: 40px;
+  border-top: 1px solid #555;
+  border-bottom: 1px solid #555;
+  display: flex;
+  font-direction: row;
+}
+
+.cHeaderCatoLinks {
+
+  height: 40px;
+  width: auto;
+  text-decoration: none;
+  margin-left: 20px;
+  color: #555;
+  font-size: 14px;
+}
+
+
+
+.cHeaderCatoLinks:hover {
+
+  border-bottom: 3px solid #f96600;
+  cursor: pointer;
+}
+
+
+/* Mid Section */
+
+
+#cAppMid {
+
+  width: 100%;
+  height: 3000px;
+  /*border: 1px solid #000;*/
+  background-color: #F9F9F9;
+  display: flex;
+  flex-direction: row;
+}
+
+
+#cMidLeftBar {
+
+  width: 400px;
+  height: 2000px;
+  /*border: 1px solid #000;*/
+  
+}
+
+#cMidLeftInner {
+
+  width: 250px;
+  height: 98%;
+  border: 1px solid #DDD;
+  background-color: #FFF;
+  border-radius: 1%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+#cMidLeftCato {
+
+  width: 230px;
+  height: 550px;
+  margin: auto;
+  border-bottom: 1px solid #DDD;
+  color: #555;
+}
+
+.cSubCato p {
+
+  padding-left: 10px;
+  margin-bottom: -5px;
+  width: auto;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+#cTopCato:hover p {
+
+  text-decoration: underline;
+  cursor: pointer;
+}
+.cSubCato:hover p {
+
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#cMidLeftLoca {
+
+  width: 230px;
+  height: 170px;
+  margin: auto;
+  border-bottom: 1px solid #DDD;
+  color: #555;
+}
+
+#cMidLeftLoca a {
+
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  color: #555;
+}
+
+#cMidLeftLoca a:hover {
+
+  text-decoration: underline;
+  color: #555;
+}
+
+.cMidLeftHeader {
+
+  padding-top: 15px;
+  padding-bottom: 0px;
+  margin-bottom: 10px;
+  font-weight: bold; 
+}
+
+.cRadio:checked:after {
+    width: 12px;
+    height: 12px;
+    border-radius: 15px;
+    top: 0px;
+    left: 1px;
+    position: relative;
+    background-color: #32A0BA;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+.cRadio:after {
+    width: 12px;
+    height: 12px;
+    border-radius: 15px;
+    top: 0px;
+    left: 0px;
+    position: relative;
+    background-color: #FFFFFF;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+.cRadio {
+
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+#cArea {
+
+  position: relative;
+}
+
+#cAreaInp {
+
+  width: 140px;
+  margin-left: 25px;
+  margin-top: 5px;
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #DDD;
+}
+
+#cSrchLocBtn {
+
+  position: absolute;
+  left: 180px;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #DDD;
+  border-radius: 10%;
+  text-align: center; 
+  line-height: 40px;
+}
+
+#cAreaInp:focus {
+
+  border: 1px solid #000;
+}
+
+#cAreaInp:hover {
+
+  border: 1px solid #777;
+}
+
+
+
+#cSrchLocBtn:hover {
+
+  cursor: pointer;
+  border: 1px solid #777;
+}
+
+#cSrchLocBtn i {
+
+ color: #555;
+}
+
+
+
+#cMidLeftItemType {
+
+  width: 230px;
+  height: 130px;
+  margin: auto;
+  border-bottom: 1px solid #DDD;
+  color: #555;
+}
+
+#cMidLeftItemType a {
+
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  color: #555;
+}
+
+#cMidLeftItemType a:hover {
+
+  text-decoration: underline;  
+}
+
+
+#cMidLeftItemPrice {
+
+  width: 230px;
+  height: 240px;
+  margin: auto;
+  border-bottom: 1px solid #DDD;
+  color: #555;
+}
+
+#cMidLeftItemPrice a {
+
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  color: #555;
+}
+
+.cCustom {
+
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  color: #555;  
+}
+
+#cMidLeftItemPrice a:hover {
+
+  text-decoration: underline;
+  
+}
+
+
+
+#cPrcRange {
+
+  position: relative;
+  margin-left: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#cPrcRange p {
+
+  position: relative;
+}
+
+#cPrcMin, #cPrcMax {
+
+  width: 60px;
+  margin-top: 5px;
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #DDD;
+}
+
+
+#cSrchPrcBtn {
+
+  margin-top: 5px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #DDD;
+  border-radius: 10%;
+  text-align: center; 
+  line-height: 40px;
+}
+
+#cPrcMin:focus, #cPrcMax:focus  {
+
+  border: 1px solid #000;
+}
+
+#cPrcMin:hover, #cPrcMax:hover  {
+
+  border: 1px solid #777;
+}
+
+
+
+#cSrchPrcBtn:hover {
+
+  cursor: pointer;
+  border: 1px solid #777;
+}
+
+#cSrchLocBtn i {
+
+ color: #555;
+}
+
+#cMidLeftItemColor {
+
+  width: 230px;
+  height: 100px;
+  margin: auto;
+  border-bottom: 1px solid #DDD;
+  color: #555;  
+}
+
+.cColorBox {
+
+  width: 25px;
+  height: 25px;
+  border: 1px solid #EEE;
+  border-radius: 2px;
+}
+
+#cColorCont {
+
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#cRed {
+
+  background-color: #f40b32;
+}
+
+#cOra {
+  
+  background-color: #FF7F00;
+}
+
+#cYell {
+  
+  background-color: #F3CC0C;
+}
+
+#cGree {
+  
+  background-color: #0AC20A;
+}
+
+#cBlue {
+  
+  background-color: #0CCCF3;
+}
+
+#cPurp {
+  
+  background-color: #A60EF3;
+}
+
+#cBlac {
+  
   background-color: #000;
 }
+
+#cWhit {
+  
+  background-color: #FFF;
+}
+
+
+
+
+
 

@@ -2,14 +2,267 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Etsy Site</title>
   <link rel="stylesheet" type="text/css" href="styles/normalize.css">
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Alike+Angular|Lora" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
 <body>
   
-  
+  <div id="cApp">
+
+    <div id="cAppHeader">
+
+
+      
+      <div id="cHeaderLeft">
+
+        <div id="cTitle">
+          <h1>Etsy</h1>
+        </div>
+
+        <div id="cHearderSearchCont">
+
+          <input id="cSearchInput" type="text" name="cEtsySearch" placeholder="Search for items or shops">
+
+          <div id="cSearchBtn">Search</div>
+
+        </div> <!-- cHearderSearchCont -->
+
+      </div> <!-- cHeaderLeft -->
+
+
+
+
+      <div id="cHeaderRight">
+
+        <div id="cHeaderMenuCart">
+          <div><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
+          <div>cart</div>
+        </div>
+        
+        <div id="cHeaderMenuSignIn">Sign in</div>
+
+        <div id="cHeaderMenuReg"><a href="#">Register</a> </div>
+
+        <div id="cHeaderMenuSell"><a href="#">Sell on Etsy</a> </div>
+
+      </div> <!-- cHeaderRight -->
+
+
+    </div> <!-- cAppHeader -->
+
+<!-- SECTION BREAK -->
+
+    <div id="cHeaderCato">
+      <div id="cHeadCatoClothAcc" class="cHeaderCatoLinks"><p>Clothing &amp; Accessories</p></div>
+      <div id="cHeadCatoJewlery" class="cHeaderCatoLinks"><p>Jewlery</p></div>
+      <div id="cHeadCatoCraft" class="cHeaderCatoLinks"><p>Craft Supplies &amp; Tools</p></div>
+      <div id="cHeadCatoWedd" class="cHeaderCatoLinks"><p>Weddings</p></div>
+      <div id="cHeadCatoEntert" class="cHeaderCatoLinks"><p>Entertainment</p></div>
+      <div id="cHeadCatoHome" class="cHeaderCatoLinks"><p>Home &amp; Living</p></div>
+      <div id="cHeadCatoBaby" class="cHeaderCatoLinks"><p>Kids &amp; Baby</p></div>
+      <div id="cHeadCatoVint" class="cHeaderCatoLinks"><p>Vintage</p></div>
+        
+    </div> <!-- cHeaderCato -->
+    <!--
+    Clothing & Accessories  Jewelry  Craft Supplies & Tools  Weddings  Entertainment  Home & Living  Kids & Baby  Vintage
+    -->
+
+
+<!-- SECTION BREAK -->
+
+    <div id="cAppMid">
+
+
+      
+      <div id="cMidLeftBar">
+
+        <div id="cMidLeftInner">
+          
+          <div id="cMidLeftCato">
+
+            <div id="cTopCato" class="cMidLeftHeader"><p>All Catagories</p></div>
+
+            <div class="cSubCato"><p>Art &amp; Collectibles</p></div>
+            <div class="cSubCato"><p>Home &amp; Living</p></div>
+            <div class="cSubCato"><p>Weddings</p></div>
+
+            <div class="cSubCato"><p>Clothing</p></div>
+            <div class="cSubCato"><p>Paper &amp; Party Supplies</p></div>
+            <div class="cSubCato"><p>Jewelry</p></div>
+
+            <div class="cSubCato"><p>Craft Supplies &amp; Tools</a></div>
+            <div class="cSubCato"><p>Accesories</p></div>
+            <div class="cSubCato"><p>Bags &amp; Purses</p></div>
+
+            <div class="cSubCato"><p>Bath &amp; Beauty</p></div>
+            <div class="cSubCato"><p>Accesories</p></div>
+            <div class="cSubCato"><p>Bags &amp; Purses</p></div>
+
+            <div class="cSubCato"><p>Books, Movies &amp; Music</p></div>
+            <div class="cSubCato"><p>Shoes</p></div>
+            <div class="cSubCato"><p>Electronics &amp; Accessories</p></div>
+
+            <div class="cSubCato"><p>Toys &amp; Games</p></div>
+            <div class="cSubCato"><p>Pet Supplies</p></div>
+
+          </div> <!-- cMidLeftCato -->
+
+
+
+          <div id="cMidLeftLoca">
+
+              <div class="cMidLeftHeader">Shop location</div>
+
+
+              <div>
+                <input class="cRadio" id="cAny" type="radio" name="cRadLoc" checked="checked">
+                <label for="cAny"><a href="#">Anywhere</a></label>
+              </div>
+
+              <div>
+              <input class="cRadio" id="cUS" type="radio" name="cRadLoc">
+              <label for="cUS"><a href="#"><a href="#">United States</a></label>
+              </div>
+
+              <div>
+                <input class="cRadio" id="cCustom" type="radio" name="cRadLoc">
+                <label class="cCustom" for="cCustom">Custom</label>
+              </div>
+
+              <div id="cArea">
+                <input id="cAreaInp" type="text" placeholder="Enter location" />
+                <div id="cSrchLocBtn">
+                  <i class="fa fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+
+              
+
+          </div> <!-- cMidLeftLoca -->
+
+
+          <div id="cMidLeftItemType">
+
+            <div class="cMidLeftHeader">Item type</div>
+
+              <div>
+                <input class="cRadio" id="cAll" type="radio" name="cRadItem" checked="checked">
+                <label for="cAll"><a href="#">All items</a></label>
+              </div>
+
+              <div>
+              <input class="cRadio" id="cHand" type="radio" name="cRadItem">
+              <label for="cHand"><a href="#">Handmade</a></label>
+              </div>
+
+              <div>
+                <input class="cRadio" id="cVint" type="radio" name="cRadItem">
+                <label for="cVint"><a href="#">Vintage</a></label>
+              </div>
+
+            </div> <!-- cMidLeftItemType -->
+
+
+            <div id="cMidLeftItemPrice">
+
+              <div class="cMidLeftHeader">Price ($)</div>
+
+              <div>
+                <input class="cRadio" id="cAnyPrc" type="radio" name="cRadPrc" checked="checked">
+                <label for="cAnyPrc"><a href="#">All items</a></label>
+              </div>
+
+              <div>
+              <input class="cRadio" id="cUndTF" type="radio" name="cRadPrc">
+              <label for="cUndTF"><a href="#">Under $25</a></label>
+              </div>
+
+              <div>
+                <input class="cRadio" id="cTFFT" type="radio" name="cRadPrc">
+                <label for="cTFFT"><a href="#">$25 to $50</a></label>
+              </div>
+
+              <div>
+                <input class="cRadio" id="cFTHD" type="radio" name="cRadPrc">
+                <label for="cFTHD"><a href="#">$50 to $100</a></label>
+              </div>
+
+              <div>
+                <input class="cRadio" id="cOHD" type="radio" name="cRadPrc">
+                <label for="cOHD"><a href="#">Over $100</a></label>
+              </div>
+
+              <div>
+                <input class="cRadio" id="cCustPrc" type="radio" name="cRadPrc">
+                <label class="cCustom" for="cCustPrc">Custom</label>
+              </div>
+
+              <div id="cPrcRange">
+
+                <input id="cPrcMin" type="text" placeholder="Low" />
+                <p>to</p>
+                <input id="cPrcMin" type="text" placeholder="High" />
+
+                <div id="cSrchPrcBtn">
+                  <i class="fa fa-play" aria-hidden="true"></i>
+                </div>
+              </div>
+
+            </div> <!-- cMidLeftItemPrice -->
+
+            <div id="cMidLeftItemColor">
+
+              <div class="cMidLeftHeader">Filter by color</div>
+              
+              <div id="cColorCont">
+
+                <div id="cRed" class="cColorBox"><div class="cColorHov"></div></div>
+                <div id="cOra" class="cColorBox"><div class="cColorHov"></div></div>
+
+                <div id="cYell" class="cColorBox"><div class="cColorHov"></div></div>
+                <div id="cGree" class="cColorBox"><div class="cColorHov"></div></div>
+
+                <div id="cBlue" class="cColorBox"><div class="cColorHov"></div></div>
+                <div id="cPurp" class="cColorBox"><div class="cColorHov"></div></div>
+
+                <div id="cBlac" class="cColorBox"><div class="cColorHov"></div></div>
+                <div id="cWhit" class="cColorBox"><div class="cColorHov"></div></div>
+              
+              </div>
+
+            </div> <!-- cMidLeftItemColor -->
+
+
+
+        </div> <!-- cMidLeftInner -->
+
+      </div> <!-- cMidLeftBar -->
+
+
+
+
+      <div id="cMidRightBody">
+
+        <div id="cMidTopCato">
+          
+        </div> <!-- cMidTopCato -->
+
+        <div id="cMidItemList">
+          
+        </div> <!-- cMidTopCato -->
+
+          <div id="cMidItem">
+          
+        </div> <!-- cMidTopCato -->
+        
+      </div> <!-- cMidRightBody -->
+
+    </div> <!-- cAppMid -->
+    
+  </div> <!-- cApp -->
 
 <script
   src="https://code.jquery.com/jquery-3.1.1.min.js"

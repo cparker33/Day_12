@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  alert("Hit Blank")
+  // alert("Hit Blank")
 
   //!!
 })
