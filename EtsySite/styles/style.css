@@ -12,22 +12,22 @@ body {
 #cApp {
 
   width: 100%;
-  height: 4000px;
-  border: 1px solid #000;
+  
+ 
 }
 
 
 #cMidRightBody {
 
   width: 100%;
-  height: 2500px;
+  margin-right: 20px;
 }
 
 #cMidTopCato {
 
   width: 100%;
   height: 300px;
-  border: 1px solid #000;
+  
 }
 
 
@@ -236,7 +236,7 @@ body {
 #cAppMid {
 
   width: 100%;
-  height: 3000px;
+  
   /*border: 1px solid #000;*/
   background-color: #F9F9F9;
   display: flex;
@@ -247,7 +247,7 @@ body {
 #cMidLeftBar {
 
   width: 400px;
-  height: 1430px;
+  
   /*border: 1px solid #000;*/
   
 }
@@ -255,7 +255,7 @@ body {
 #cMidLeftInner {
 
   width: 250px;
-  height: 98%;
+  
   border: 1px solid #DDD;
   background-color: #FFF;
   border-radius: 1%;
@@ -844,9 +844,37 @@ body {
 }
 
 
+#cMidFooter {
+
+  width: 100%;
+  height: 300px;
+ 
+}
+
+#cPgNav {
+
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+ 
+}
+
+.cPgNavBtn {
+
+  width: 40px;
+  height: 40px;
+  background-color: #F9F9F9;
+  border: 1px solid #DDD;
+  text-align: center;
+  line-height: 40px;
+  color: #555;
+}
 
 
+.cPgNavBtn:hover {
 
-
+  cursor: pointer;
+  background-color: #EEE;
+}
   
 
