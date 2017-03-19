@@ -17,11 +17,6 @@ body {
 }
 
 
-
-
-
-
-
 #cMidRightBody {
 
   width: 100%;
@@ -660,47 +655,77 @@ body {
 #cMidItemList {
 
   width: 100%;
+  margin-top: 10px;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-flow: row wrap;
+  justify-content: center;
+  
 }
 
 
 
 .cItemCont {
 
-  width: 295px;
-  height: 295px;
+  position: relative;
+  flex-shrink: 2;
+  flex-grow: 2;
+  width: 195px;
+  height: 195px;
+  align-self: auto; 
+  text-align: left;
   border: 1px solid #CCC; 
   margin-bottom: 15px;
+  margin-right: 10px;
   border-radius: 5px;
   overflow: hidden;
 }
 
+.cItemCont:hover {
+
+  box-shadow: 0 4px 2px -2px gray;
+}
+
+
+.cItemContInner:hover {
+
+  cursor: pointer;
+  
+
+}
+
+.cItemContInner:hover ~ .cItemHoverMenu{
+
+  cursor: pointer;
+  visibility: visible;
+}
+
 .cItemImg {
 
-  width: 295px;
-  height: 235px; 
+  flex-shrink: 2;
+  flex-grow: 2;
+  width: 100%;
+  height: 150px; 
 }
 
 .cItemTitle {
 
-  width: 295px;
+  width: 195px;
   height: 25px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 25px;    
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
+  padding-left: 5px;
+  margin-top: -2px;
 
 }
 
 .cShpPrcCont {
 
-  width: 295px;
-  margin-top: 8px;
+  width: 100%;
+  margin-top: 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -718,16 +743,110 @@ body {
 
 .cItemStore {
 
-  width: 105px;
+  width: 125px;
   color: #AAA;   
   font-weight: 300;
-  font-size: 15px;
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   text-align: left;
   padding-left: 5px;
+}
+
+
+.cItemHoverMenu {
+
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 25px;
+  display: flex;
+  flex-direction: row-reverse;
+  visibility: hidden;
+
+}
+
+
+
+
+.cHeart {
+
+  margin-right: 2px;
+  width: 25px;
+  height: 25px;
+  background-color: #EEE;
+  text-align: center;
+  line-height: 25px;
+  color: #BDBDBD;
+}
+
+
+.cHambBtn {
+
+  margin-right: 2px;
+  width: 35px;
+  height: 25px;
+  background-color: #EEE;
+  display: flex;
+  flex-direction: row;
+  text-align: right;
+  line-height: 25px;
+}
+
+.cHamb {
+
+  margin-left: 5px;
+  margin-right: 2px;
+  color: #BDBDBD;
+}
+
+.cArr {
+
+  margin-left: 2px;
+  margin-right: 5px;
+  margin-top: -3px;
+  color: #BDBDBD;
+}
+
+
+
+.cItemHoverMenu:hover {
+
+  visibility: visible;
+}
+
+.cHeart:hover {
+
+  cursor: pointer;
+  color: #ABABAB;
+}
+
+.cHambBtn:hover {
+
+  cursor: pointer;
+  color: #ABABAB;
+}
+
+.cHambBtn:hover i {
+
+  color: #ABABAB;
+}
+
+.cHambBtn:hover ~ .cArr {
+  
+  color: #ABABAB;
+}
+
+#cCatBreadCrumb {
+
+  margin-top: 10px;
 }
 
 
 
 
 
+
+  
 

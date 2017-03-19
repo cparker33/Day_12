@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   var itemList = [];
 
-  var itemDispCount = 18 // ?
+  var itemDispCount = 24 // ?  48
 
   var cSrchResult = []
 
@@ -31,17 +31,39 @@ $(document).ready(function() {
         // onclick="location.href='${this.lstItm_itmurl}'"
       var appendStr = (`
         
-          <div id="${this.id}" class="cItemCont" onclick="location.href='${this.lstItm_itmurl}'">
+          <div class="cItemCont">
 
-            <img class="cItemImg" src="${this.lstItm_img}">
+            <div class="cItemContInner" onclick="location.href='${this.lstItm_itmurl}'">
 
-            <div class="cItemTitle">${this.lstItm_title}</div>
+              <img class="cItemImg" src="${this.lstItm_img}">
 
-            <div class="cShpPrcCont">
+              <div class="cItemTitle">${this.lstItm_title}</div>
 
-              <div class="cItemStore">${this.lstItm_shop}</div>
+            
 
-              <div class="cItemCost">${this.lstItm_price}</div>
+              <div class="cShpPrcCont">
+
+                <div class="cItemStore">${this.lstItm_shop}</div>
+
+                <div class="cItemCost">${this.lstItm_price}</div>
+
+              </div>
+
+
+            </div>
+
+            <div class="cItemHoverMenu">
+
+              <div class="cHambBtn">
+
+                <div class="cHamb"><i class="fa fa-bars" aria-hidden="true"></i></div>
+                <div class="cArr"><i class="fa fa-sort-desc" aria-hidden="true"></i></div>
+                                
+              </div>
+
+              <div class="cHeart"><i class="fa fa-heart" aria-hidden="true"></i></div>
+
+              
 
             </div>
 
@@ -56,16 +78,23 @@ $(document).ready(function() {
     // obj
   })
 
+//##########################
+//####################
 
 
-  $.getJSON('https://api.etsy.com/v2/listings/active.js?api_key=h9oq2yf3twf4ziejn10b717i&keywords=whiskey&includes=Images,Shop&callback=?', function(data) {
+  $.getJSON('https://api.etsy.com/v2/listings/active.js?api_key=h9oq2yf3twf4ziejn10b717i&keywords=Mississippi&includes=Images,Shop&callback=?', function(data) {
+
+
+    console.log(data)
+    // console.log(data.results.length)
+    console.log(data.results.length)
 
       for (var i = 0; i < data.results.length; i += 1) {
         
         cSrchResult.push(data.results[i])
       }
 
-      console.log(cSrchResult)
+      // console.log(cSrchResult)
 
       addItems()
 
@@ -89,7 +118,6 @@ $(document).ready(function() {
 
             newItem.lstItm_img = img.url_fullxfull
           
-
           }
 
         }) 
@@ -104,21 +132,12 @@ $(document).ready(function() {
         newItem.lstItm_shop = cSrchResult[a].Shop.shop_name
         
 
-        // console.log(newItem)
 
-        // console.log(cSrchResult[a].Shop.shop_name, + ` $${cSrchResult[a].price}`)
-
-        
-
-        if (cSrchResult[a].Shop.title !== null && cSrchResult[a].Shop.title !== '') {
+        // if (cSrchResult[a].Shop.title !== null && cSrchResult[a].Shop.title !== '') {
 
           newItem.scrbCont()
 
-        } else {
-
-          itemDispCount += 1
-
-        }
+        
 
 
       } // FOR ( A )
