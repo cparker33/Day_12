@@ -54,14 +54,14 @@ $(document).ready(function() {
 
             <div class="cItemHoverMenu">
 
-              <div class="cHambBtn">
+              <div class="cHambBtn" onclick="signUpFunction()">
 
                 <div class="cHamb"><i class="fa fa-bars" aria-hidden="true"></i></div>
                 <div class="cArr"><i class="fa fa-sort-desc" aria-hidden="true"></i></div>
                                 
               </div>
 
-              <div class="cHeart"><i class="fa fa-heart" aria-hidden="true"></i></div>
+              <div class="cHeart" onclick="makeFavFunction()"><i class="fa fa-heart" aria-hidden="true"></i></div>
 
               
 

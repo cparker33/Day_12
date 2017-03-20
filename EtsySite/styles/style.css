@@ -12,7 +12,8 @@ body {
 #cApp {
 
   width: 100%;
-  
+ border: 1px solid #EEE;
+ /*border: 1px solid #000;*/ 
  
 }
 
@@ -863,7 +864,7 @@ body {
 
   width: 40px;
   height: 40px;
-  background-color: #F9F9F9;
+  background-color: #FFF;
   border: 1px solid #DDD;
   text-align: center;
   line-height: 40px;
@@ -876,5 +877,63 @@ body {
   cursor: pointer;
   background-color: #EEE;
 }
-  
+ 
 
+#cSubscribeCont {
+
+  margin: auto;
+  margin-top: 30px;
+  width: 500px;
+
+}
+
+#cSubscribeCont p {
+
+  text-align: center;
+  color: #555;
+}
+
+#cSubscribe {
+  
+ 
+  width: 440px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+
+}
+
+#cSubscribeInp {
+
+  width: 350px;
+  height: 35px;
+  border-radius: 5px;  
+  margin-top: 20px;
+  margin-left: 10px;
+  padding-left: 10px;
+  font-size: 16px;
+  outline: none;
+  border: 1px solid #CCC;
+}
+
+#cSubscribeInp:focus {
+
+  border-radius: 5%;  
+  outline: none;
+  border: 1px solid #000;
+}
+
+ #cSubscribeBtn {
+
+  width: 80px;
+  height: 35px;  
+  margin-top: 20px;
+  margin-left: -10px;
+  border-radius: 3%;
+  background-color: #32A0BA; /* 34a8c4  3099B3*/
+  border: 1px solid #3099B3;
+  color: #FFF;
+  text-align: center;
+  line-height: 35px;
+  font-size: 14px;
+}
